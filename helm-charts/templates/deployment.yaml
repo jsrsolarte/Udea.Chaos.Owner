@@ -1,4 +1,5 @@
 {{- $environment := .Values.environment }}
+{{- $aadPodIdBinding := .Values.aadPodIdBinding }}
 {{- $registrySecret := .Values.registrySecret }}
 {{- $imageRepository := .Values.image.repository }}
 {{- $imageTag := .Values.image.tag }}
