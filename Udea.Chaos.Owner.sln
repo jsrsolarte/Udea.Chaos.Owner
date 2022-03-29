@@ -3,13 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udea.Chaos.Owner.Api", "Udea.Chaos.Owner.Api\Udea.Chaos.Owner.Api.csproj", "{5490A6D0-C54F-4E98-B4D5-2FDFF4FDCBD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udea.Chaos.Owner.Api", "Udea.Chaos.Owner.Api\Udea.Chaos.Owner.Api.csproj", "{5490A6D0-C54F-4E98-B4D5-2FDFF4FDCBD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udea.Chaos.Owner.Infrastructure", "Udea.Chaos.Owner.Infrastructure\Udea.Chaos.Owner.Infrastructure.csproj", "{CB0B7E12-132A-4C3D-A04E-EB12D935A9FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udea.Chaos.Owner.Infrastructure", "Udea.Chaos.Owner.Infrastructure\Udea.Chaos.Owner.Infrastructure.csproj", "{CB0B7E12-132A-4C3D-A04E-EB12D935A9FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udea.Chaos.Owner.Domain", "Udea.Chaos.Owner.Domain\Udea.Chaos.Owner.Domain.csproj", "{BCEF58C5-03A3-4557-8918-4CCCA82DC3AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udea.Chaos.Owner.Domain", "Udea.Chaos.Owner.Domain\Udea.Chaos.Owner.Domain.csproj", "{BCEF58C5-03A3-4557-8918-4CCCA82DC3AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udea.Chaos.Owner.Application", "Udea.Chaos.Owner.Application\Udea.Chaos.Owner.Application.csproj", "{FC6C5B1B-A096-41DD-8E5F-040B8C9933CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udea.Chaos.Owner.Application", "Udea.Chaos.Owner.Application\Udea.Chaos.Owner.Application.csproj", "{FC6C5B1B-A096-41DD-8E5F-040B8C9933CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AFDAE9C8-D99B-4C7A-9789-CA354DB93111}"
+	ProjectSection(SolutionItems) = preProject
+		helm-charts\chart.yaml = helm-charts\chart.yaml
+		helm-charts\deployment.yaml = helm-charts\deployment.yaml
+		helm-charts\hpa.yaml = helm-charts\hpa.yaml
+		helm-charts\service.yaml = helm-charts\service.yaml
+		helm-charts\values.yaml = helm-charts\values.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
