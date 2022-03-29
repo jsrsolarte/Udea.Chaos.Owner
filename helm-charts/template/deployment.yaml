@@ -18,6 +18,9 @@ spec:
     metadata:
       labels:
         name: {{ .Chart.Name }}
+        {{- with $aadPodIdBinding }}
+        aadpodidbinding: {{ $aadPodIdBinding }}
+        {{- end }}
       annotations:
         timestamp: "{{ date "20060102150405" .Release.Time }}"
     spec:
