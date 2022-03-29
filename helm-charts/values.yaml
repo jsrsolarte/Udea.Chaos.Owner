@@ -3,7 +3,7 @@ environment: "#{environment}#"
 registrySecret: "st-epm-np-aks-p2p"
 
 image:
-  repository: "#{imageName}#"
+  repository: "#{acrName}#/#{imageName}#"
   tag: "#{Build.BuildId}#"
 
 service:
