@@ -1,6 +1,5 @@
 environment: "#{environment}#"
 
-registrySecret: "st-udea-chaos-acr"
 aadPodIdBinding: "aapodidbindingchaos"
 
 image:
