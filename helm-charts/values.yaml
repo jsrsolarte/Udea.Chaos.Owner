@@ -4,7 +4,7 @@ registrySecret: "st-epm-np-aks-p2p"
 
 image:
   repository: "#{acrName}#/#{imageName}#"
-  tag: "#{Build.BuildId}#"
+  tag: #{Build.BuildId}#
 
 service:
   type: ClusterIP
@@ -29,9 +29,9 @@ readinessProbe:
 replicaCount: 1
 
 autoscaling:
-  enabled: "#{autoscalingEnabled}#"
+  enabled: #{autoscalingEnabled}#
   minReplicas: 2
-  maxReplicas: 100
+  maxReplicas: 10
   targetCPUUtilizationPercentage: 80
   targetMemoryUtilizationPercentage: 80
 
