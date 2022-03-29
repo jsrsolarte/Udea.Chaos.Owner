@@ -1,6 +1,6 @@
 environment: "#{environment}#"
 
-registrySecret: "st-epm-np-aks-p2p"
+registrySecret: "st-udea-chaos-acr"
 
 image:
   repository: "#{acrName}#/#{imageName}#"
