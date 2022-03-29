@@ -1,5 +1,6 @@
 {{- $environment := .Values.environment }}
 {{- $aadPodIdBinding := .Values.aadPodIdBinding }}
+{{- $registrySecret := .Values.registrySecret }}
 {{- $imageRepository := .Values.image.repository }}
 {{- $imageTag := .Values.image.tag }}
 
@@ -23,7 +24,9 @@ spec:
         {{- end }}
       annotations:
         timestamp: "{{ date "20060102150405" .Release.Time }}"
-    spec:  
+    spec:
+      imagePullSecrets:
+        - name: {{ $registrySecret }}    
       containers:
         - name: {{ .Chart.Name }}
           image: {{ $imageRepository }}:{{ $imageTag }}
