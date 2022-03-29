@@ -1,5 +1,6 @@
 environment: "#{environment}#"
 
+registrySecret: "acr-secret"
 aadPodIdBinding: "aapodidbindingchaos"
 
 image:

@@ -23,7 +23,9 @@ spec:
         {{- end }}
       annotations:
         timestamp: "{{ date "20060102150405" .Release.Time }}"
-    spec:  
+    spec:
+      imagePullSecrets:
+        - name: {{ $registrySecret }}    
       containers:
         - name: {{ .Chart.Name }}
           image: {{ $imageRepository }}:{{ $imageTag }}
