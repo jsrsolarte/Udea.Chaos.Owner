@@ -4,7 +4,7 @@ registrySecret: "st-epm-np-aks-p2p"
 
 image:
   repository: "#{imageName}#"
-  tag: "1.0.0"
+  tag: "#{Build.BuildId}#"
 
 service:
   type: ClusterIP
