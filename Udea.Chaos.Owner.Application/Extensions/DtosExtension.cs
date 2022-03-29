@@ -7,7 +7,7 @@ namespace Udea.Chaos.Owner.Application.Extensions
     {
         public static OwnerDto ToDto(this Domain.Entities.Owner owner)
         {
-            return new OwnerDto(owner.Identificacion, owner.Nombres, owner.FechaNacimiento, owner.Direccion,  owner.Email);
+            return new OwnerDto(owner.Id, owner.Identificacion, owner.Nombres, owner.FechaNacimiento, owner.Direccion, owner.Email);
         }
 
         public static Domain.Entities.Owner ToEntity(this CreateOwner owner)
