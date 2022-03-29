@@ -22,10 +22,10 @@ resources:
 
 livenessProbe:
   initialDelaySeconds: 30
-  periodSeconds: 15
+  periodSeconds: 30
 readinessProbe:
   initialDelaySeconds: 30
-  periodSeconds: 15
+  periodSeconds: 30
 
 replicaCount: 1
 

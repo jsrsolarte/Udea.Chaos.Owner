@@ -22,8 +22,6 @@ spec:
         {{- with $aadPodIdBinding }}
         aadpodidbinding: {{ $aadPodIdBinding }}
         {{- end }}
-      annotations:
-        timestamp: "{{ date "20060102150405" .Release.Time }}"
     spec:
       imagePullSecrets:
         - name: {{ $registrySecret }}    
