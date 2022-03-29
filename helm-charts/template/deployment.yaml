@@ -18,9 +18,7 @@ spec:
     metadata:
       labels:
         name: {{ .Chart.Name }}
-    spec:
-      imagePullSecrets:
-        - name: {{ $registrySecret }}      
+    spec:    
       containers:
         - name: {{ .Chart.Name }}
           image: {{ $imageRepository }}:{{ $imageTag }}
