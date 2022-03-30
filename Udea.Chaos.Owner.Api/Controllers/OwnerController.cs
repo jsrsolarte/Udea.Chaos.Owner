@@ -19,7 +19,7 @@ namespace Udea.Chaos.Owner.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<OwnerDto>> GetOwners()
+        public async Task<IEnumerable<Guid>> GetOwnersIds()
         {
             return await _mediator.Send(new GetAllOwners());
         }
