@@ -43,3 +43,6 @@ cosmosdb:
     database:
       name: OwnerDb
       connectionString: "#{cosmosdbConnectionString}#"
+services:
+  vehicle:
+    url: chaos-vehicle-api/api/vehicle
