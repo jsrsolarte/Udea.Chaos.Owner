@@ -24,6 +24,15 @@ namespace Udea.Chaos.Owner.Api.Controllers
             return await _mediator.Send(new GetAllOwners());
         }
 
+        [HttpGet("detail/{id}")]
+        public async Task<OwnerWithVehiclesDto?> GetOwnerDetail(Guid id)
+        {
+            var owner = await _mediator.Send(new GetOwnerDetail(id));
+
+            if (owner == null) return null;
+            return owner;
+        }
+
         [HttpPost]
         public async Task CreateOwner(CreateOwner createOwner)
         {

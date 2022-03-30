@@ -10,6 +10,11 @@ namespace Udea.Chaos.Owner.Application.Extensions
             return new OwnerDto(owner.Id, owner.Identificacion, owner.Nombres, owner.FechaNacimiento, owner.Direccion, owner.Email);
         }
 
+        public static OwnerWithVehiclesDto ToDto(this Domain.Entities.Owner owner, IEnumerable<VehicleDto> vehicles)
+        {
+            return new OwnerWithVehiclesDto(owner.Id, owner.Identificacion, owner.Nombres, owner.FechaNacimiento, owner.Direccion, owner.Email, vehicles);
+        }
+
         public static Domain.Entities.Owner ToEntity(this CreateOwner owner)
         {
             return new Domain.Entities.Owner
