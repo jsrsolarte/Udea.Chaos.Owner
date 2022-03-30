@@ -17,7 +17,7 @@ namespace Udea.Chaos.Owner.Infrastructure.Adapters
 
         public VehicleService(IFlurlClientFactory flurlClientFac, IConfiguration config)
         {
-            _flurlClient = flurlClientFac.Get(config.GetSection("UrlVehicleApi").Value);
+            _flurlClient = flurlClientFac.Get(config.GetValue<string>("UrlVehicleApi"));
         }
 
         public async Task<IEnumerable<VehicleDto>> GetVehicles(Guid ownerId)

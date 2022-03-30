@@ -45,4 +45,4 @@ cosmosdb:
       connectionString: "#{cosmosdbConnectionString}#"
 services:
   vehicle:
-    url: chaos-vehicle-api/api/vehicle
+    url: http://chaos-vehicle-api/api/vehicle
