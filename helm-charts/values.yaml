@@ -46,3 +46,5 @@ cosmosdb:
 services:
   vehicle:
     url: http://chaos-vehicle-api/api/vehicle
+  journey:
+    url: http://chaos-journey-api/api/journey
