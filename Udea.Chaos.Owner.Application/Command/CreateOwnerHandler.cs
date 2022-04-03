@@ -15,7 +15,7 @@ namespace Udea.Chaos.Owner.Application.Command
 
         protected override async Task Handle(CreateOwner request, CancellationToken cancellationToken)
         {
-            await _ownerRepositry.AddAsync(request.ToEntity());
+            await _ownerRepositry.AddAsync(request.ToEntity(), cancellationToken);
         }
     }
 }

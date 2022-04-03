@@ -13,6 +13,7 @@ var config = builder.Configuration;
 builder.Services.AddHealthChecks();
 builder.Services.AddTransient(typeof(IFlurlClientFactory), typeof(PerBaseUrlFlurlClientFactory));
 builder.Services.AddTransient<IVehicleService, VehicleService>();
+builder.Services.AddTransient<IJourneyService, JourneyService>();
 builder.Services.AddPersistence(config);
 builder.Services.AddMediatR(applicationAssembly, typeof(Program).Assembly);
 

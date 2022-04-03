@@ -19,8 +19,8 @@ namespace Udea.Chaos.Owner.Application.Queries
 
         public async Task<OwnerWithVehiclesDto?> Handle(GetOwnerDetail request, CancellationToken cancellationToken)
         {
-            var vehicles = await _vehicleService.GetVehicles(request.id);
-            var owner = await _ownerRepository.GetByIdAsync(request.id.ToString());
+            var vehicles = await _vehicleService.GetVehicles(request.Id);
+            var owner = await _ownerRepository.GetByIdAsync(request.Id.ToString(), cancellationToken);
             if (owner == null) return null;
             return owner.ToDto(vehicles);
         }
